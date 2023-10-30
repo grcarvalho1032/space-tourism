@@ -1,0 +1,1130 @@
+/*General leyout config start*/
+:root {
+    --bg-color: #0B0D17;
+    --lilac: #D0D6F9;
+    --white: #FFFFFF;
+    --gray: #979797;
+    --colorNumber: #4e5058;
+    --bellefair: 'bellefair';
+    --barlow: 'barlow';
+    --barlow-c: 'barlow condensed';
+    --line: solid 1px #383B4B;
+}
+
+.body-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    background: url(./Assests/Bitmap.png);
+    /* /* troquei o fundo foi de Bitmap.png para Bitmap.jpeg 
+    para ficar igual o figma */
+    background-position: center;
+    /* overflow: hidden; */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: var(--bellefair);
+    font-size: 150px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--bellefair);
+    font-size: 100px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: var(--bellefair);
+    font-size: 56px;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.h5-index {
+    font-family: var(--barlow-c);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--lilac);
+    letter-spacing: 4.75px;
+    margin: 0;
+    padding: 0;
+}
+
+.subheading1 {
+    font-family: var(--bellefair);
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--white);
+    margin: 0;
+}
+
+.subheading2 {
+    font-family: var(--barlow-c);
+    font-weight: 400;
+    color: var(--lilac);
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    margin: 0;
+}
+
+.navtext {
+    font-family: var(--barlow-c);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: 2.7px;
+    margin: 0;
+}
+
+.p-index {
+    font-family: var(--barlow);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0;
+    line-height: 1.575em;
+}
+
+.navnum {
+    font-family: var(--barlow-c);
+    font-weight: 700;
+    color: var(--white);
+}
+
+/*General layout config end*/
+
+/*Config header start*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    margin: 41px 0 0 0;
+}
+
+.line-header {
+    border-bottom: 1px solid #979797;
+    width: 50vw;
+    margin-left: 157px;
+    z-index: 4;
+    position: relative;
+    left: 57px;
+}
+
+#logo {
+    aspect-ratio: 1/1;
+    height: 48px;
+    margin-left: 57px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-right: 2%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+    width: 830px;
+    box-sizing: border-box;
+    height: 96px;
+    backdrop-filter: blur(120px);
+    filter: drop-shadow(5px 10px 8px rgba(0, 0, 0, 0.3));
+}
+
+header nav ul li {
+    font-family: var(--barlow-c);
+    font-size: 18px;
+    color: var(--white);
+}
+
+header nav ul a {
+    font-family: var(--barlow-c);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.active {
+    padding: 0 0 34px 0;
+    border-bottom: 3px solid var(--white);
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 0 0 34px 0;
+}
+
+.nav-btn :hover {
+    padding: 0 0 34px 0;
+    border-bottom: 3px solid var(--gray);
+}
+
+.nav-btn a:hover {
+    cursor: pointer;
+    border-bottom: 0;
+}
+
+.header ul li span {
+    font-weight: 700;
+}
+#toggle-button{
+    display: none;
+}
+
+/*Config header end*/
+
+
+/*Config div content start*/
+.content-index {
+    flex: 1;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-index section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 382px;
+
+}
+
+.content-index button {
+    width: 274px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: none;
+}
+
+.content-index a {
+    font-family: var(--bellefair);
+    font-size: 32px;
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.content-index a :hover {
+    box-shadow: 0 0 0px 80px rgba(97, 97, 97, 0.3);
+    color: var(--bgcolor);
+    background-color: var(--white);
+}
+
+
+/*Config div content end*/
+
+/* >>>>>DESTINATION CSS<<<<< */
+.body-destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    background: url(./Assests/Background-Destination.png);
+    /* background-position: center; */
+    /* overflow: hidden; */
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.h5 {
+    font-family: var(--barlow-c);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--white);
+    letter-spacing: 4.75px;
+    margin: 32px 0 32px 144px;
+    padding: 0;
+}
+
+.b-destination {
+    color: var(--colorNumber);
+}
+
+.navtext-destination {
+    font-family: var(--barlow-c);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lilac);
+    letter-spacing: 2.7px;
+    margin: 0;
+}
+
+.p-destination {
+    font-family: var(--barlow);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--lilac);
+    margin: 0;
+}
+
+.content-destination {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+
+.main-destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    width: 35vw;
+
+}
+
+.ul-destination a {
+    text-decoration: none;
+    color: var(--lilac);
+}
+
+.ul-destination span {
+    margin: 0;
+}
+
+.ul-destination {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 26px;
+}
+
+.line {
+    width: 100%;
+    border: var(--line);
+}
+
+.planet-active {
+    color: var(--white);
+    padding: 0 0 15px 0;
+    border-bottom: 3px solid var(--white);
+}
+
+.planet-img{
+width:270px;
+aspect-ratio: 1/1;
+}
+.navtext-destination:hover {
+    padding: 0 0 15px 0;
+    border-bottom: 3px solid var(--gray);
+}
+
+.aside-destination {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.main-destination h2 {
+    align-self: flex-start;
+}
+
+.rodape-destination {
+    display: flex;
+    width: 100%;
+    gap: 55px;
+}
+
+.sub-titulo-destination {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-planet img {
+    width: 30vw;
+}
+
+
+/* >>>>>DESTINATION CSS - FINAL <<<<< */
+
+/* >>>>>>>>CREW CSS<<<<<<<< */
+.body-crew {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    background: url(./Assests/Background-Crew.png);
+    /* background-position: center; */
+    background-size: cover;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+h4 {
+    font-family: var(--bellefair);
+    font-size: 32px;
+    color: var(--lilac);
+    margin: 0;
+    padding: 0;
+}
+
+.p-crew {
+    font-family: var(--barlow);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--lilac);
+    margin: 0;
+}
+
+.content-crew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 34px;
+}
+
+.main-crew {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65vh;
+    width: 45vw;
+}
+
+.aside-crew img {
+    height: 68vh;
+}
+
+
+.ul-crew button {
+    text-decoration: none;
+    color: var(--lilac);
+    background-color: #373840;
+    height: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+}
+
+.ul-crew .crew-active {
+    background-color: var(--white);
+}
+
+.ul-crew a :hover {
+    background-color: var(--gray);
+    cursor: pointer;
+    border: none;
+}
+
+.ul-crew {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.dados {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-crew h2 {
+    align-self: flex-start;
+}
+
+.img-crew {
+    display: flex;
+    align-self: flex-end;
+}
+
+#job {
+    text-transform: uppercase;
+    color: #8d8e97;
+}
+
+#crew-name {
+    text-transform: uppercase;
+}
+
+#text {
+    width: 65%;
+    word-spacing: 0.2em;
+}
+
+.img-crew {
+    aspect-ratio: 1/1.2;
+    height: 78vh;
+}
+
+/* >>>>>CREW CSS - FINAL <<<<< */
+
+/* >>>>>TECHNOLOGY CSS <<<<< */
+.body-thechnology {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    background: url(./Assests/Background-Technology.png);
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+    width: 100vw;
+}
+
+
+.main-technology {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 90vw;
+    gap: 10vh;
+}
+
+.content-technology {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 1vh;
+}
+
+
+.sub-content-technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7vw;
+    width: 50vw;
+}
+
+
+.ul-technology {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+.ul-technology button {
+    font-family: var(--bellefair);
+    font-size: 32px;
+    width: 5vw;
+    aspect-ratio: 1/1;
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #4d4e56;
+}
+
+.ul-technology button.active-technology {
+    color: var(--bg-color);
+    background-color: var(--white);
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--bg-color);
+    border: 1px solid var(--white);
+}
+
+.dados-technology {
+    width: 46vw;
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+}
+
+.aside-technology img {
+    height: 60vh;
+    mask-image: url(./Assests/Bitmap-tablet-Rocket.jpg);
+}
+
+.tittle-text-technology {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#text-technology {
+    color: var(--lilac);
+    font-family: var(--barlow);
+    flex: 1;
+    line-height: 2em;
+    width: 100%;
+}
+
+.h5 b {
+    color: var(--colorNumber);
+}
+
+/* >>>>>TECHNOLOGY CSS - FINAL <<<<< */
+#btn-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /*>>>>>>>INDEX<<<<<<<*/
+    * {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .body-index {
+        margin: 0;
+        padding: 0;
+        font-size: 0.9em;
+        background: url(./Assests/Bitmap-tablet.jpg) no-repeat;
+        background-position: center;
+        /* overflow: hidden; */
+    }
+
+    .content-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ul-principal {
+        padding: 0;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .header-principal {
+        margin: 0;
+    }
+
+
+    .line-header {
+        display: none;
+    }
+
+    .navnum {
+        display: none;
+    }
+
+    header nav {
+        background-color: #151822;
+        padding: 0;
+        filter: none;
+        backdrop-filter: none;
+    }
+
+    .content-index section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .p-index {
+        font-family: var(--barlow);
+        color: var(--lilac);
+    }
+
+    /*>>>>>>>INDEX - FINAL<<<<<<<*/
+
+
+
+    /*>>>>>>> DESTINATION <<<<<<<*/
+    .body-destination {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        /* background: url(./Assests/Background-Destination.png) no-repeat; */
+        background-position: center;
+        /* overflow: hidden; */
+    }
+
+    .content-destination {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-destination {
+        width: 556px;
+        display: flex;
+        align-items: center;
+    }
+
+    .p-destination {
+        margin: 0;
+        padding: 0;
+        width: 450px;
+    }
+
+    .rodape-destination {
+        justify-content: center;
+    }
+
+    .ul-destination {
+        justify-content: center;
+    }
+
+    #planet-name {
+        align-self: center;
+    }
+
+    .header-principal nav {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        background-color: #151822;
+    }
+
+    .header-principal {
+        margin: 0;
+    }
+
+    aside h5 {
+        align-self: flex-start;
+    }
+
+    .h5 {
+        margin: 25px 0 25px 25px;
+        font-size: 1.7em;
+        align-self: flex-start;
+    }
+    body.body-thechnology h5.h5{
+        font-size: 21.76px;
+    }
+    .navtext-destination:hover{
+        color: white;
+        border-color: white;
+    }
+    /*>>>>>>> DESTINATION - FINAL <<<<<<<*/
+
+    /*>>>>>>> CREW  <<<<<<<*/
+    .body-crew {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        height: 100vh;
+        background: url(./Assests/Bitmap-tablet2.jpg) no-repeat;
+        background-position: center;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .content-crew {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 91vh;
+        gap: 0;
+    }
+
+    .img-crew {
+        height: 100%
+    }
+
+    .dados {
+        height: 200px;
+    }
+
+    .main-crew {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 33vh;
+    }
+
+    .p-crew {
+        align-self: center;
+    }
+
+    #img-crew {
+        display: flex;
+        justify-content: center;
+        height: 51vh;
+    }
+    .ul-crew button:hover{
+        background-color: white;
+    }
+    
+
+    /*>>>>>>> CREW - FINAL <<<<<<<*/
+
+    /*>>>>>>> TECHNOLOGY<<<<<<<*/
+    .body-crew {
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        background: url(./Assests/Bitmap-tablet2.jpg) no-repeat;
+        background-position: center;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .content-technology {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-technology {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .sub-content-technology {
+        flex-direction: column;
+    }
+
+    .ul-technology {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .ul-technology li a button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        width: 7vh;
+    }
+
+    .img-tec {
+        height: 310px;
+        width: 100vw;
+    }
+    
+    .aside-technology img {
+        object-fit: cover;
+        height: 30vh;
+    }
+    
+    .dados-technology {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 75vw;
+        gap:24px
+    }
+
+    .tittle-text-technology {
+        gap: 8px;
+    }
+    .content-technology{
+        font-size: 1.5em;
+    }
+    .subheading2{
+        font-size: 1em;
+    }
+    .ul-technology button:hover {
+        color: var(--bg-color);
+        background-color: var(--white);
+        border: 1px solid var(--white);
+    }
+
+   
+
+    /*>>>>>>> TECHNOLOGY - FINAL <<<<<<<*/
+}
+
+@media screen and (max-width: 540px) {
+
+    /*>>>>>>> INDEX  <<<<<<<*/
+    header nav ul{
+        backdrop-filter: blur(25px);
+    }
+
+    .content-index section {
+        width: 100%;
+    }
+
+    img#logo {
+        margin: 0;
+    }
+
+    .header-principal {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .h5-index {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .p-index {
+        font-size: 0.9em;
+        width: 85vw;
+    }
+
+    .content-section {
+        justify-content: space-evenly;
+    }
+
+    .content-index section {
+        height: 45vh;
+
+    }
+
+    .content-index button {
+        width: 45vw;
+        aspect-ratio: 1/1;
+    }
+    body .h5{
+        margin: 85px 0 15px 0;
+    }
+    body{
+        overflow-y: auto;
+    }
+
+    /*>>>>>>> INDEX - FINAL <<<<<<<*/
+
+    /*>>>>>>> DESTINATION <<<<<<<*/
+    
+    .body-destination{
+        background: url(./Assests/Bitmap-cell.png) no-repeat;
+        overflow-x: hidden;
+    }
+
+    .aside-destination {
+        gap: 5vh;
+    }
+
+    .ul-destination li a span {
+        font-size: 0.9em;
+        padding-bottom: 6px;
+    }
+
+    .planet-active {
+        padding-bottom: 6px;
+        border-color: var(--white);
+    }
+
+    .navtext-destination:hover {
+        padding-bottom: 6px;
+        border-color: var(--white);
+    }
+
+    #planet-name {
+        font-size: 4.5em;
+    }
+
+    .p-destination {
+        font-size: 0.9em;
+    }
+
+    #text {
+        width: 50%;
+    }
+
+    .rodape-destination {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .line {
+        width: 90vw;
+        ;
+    }
+    .main-destination{
+        height: 60vh;
+        width: 100vw;
+    }
+    .planet-img{
+        height: 170px;
+    }
+    #img-planet img{
+        width: 170px;
+    }
+
+
+    /*>>>>>>> DESTINATION - FINAL <<<<<<<*/
+
+    /*>>>>>>> CREW <<<<<<<*/
+
+    .body-crew{
+        overflow:auto;
+    }
+    .content-crew {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    #job {
+        font-size: 1.3em;
+
+    }
+
+    #crew-name {
+        font-size:2em;
+    }
+
+    #text {
+        font-size: 1.2em;
+        width: 85vw;
+    }
+
+    .main-crew {
+        flex-direction: column-reverse;
+        gap:20px;
+    }
+
+    .img-crew {
+        height: 40vh;
+    }
+    #img-crew{
+        height:fit-content;
+        border-bottom: 1px solid #383b4a;
+        width: 80vw;
+    }
+    /*>>>>>>> CREW - FINAL <<<<<<<*/
+    /*>>>>>>> TECHNOLOGY  <<<<<<<*/
+
+    .tittle-text-technology {
+        align-items: center;
+    }
+
+    #text-technology {
+        width: 85vw;
+        font-size: 0.9em;
+    }
+
+    .subheading2 {
+        width: 85vw;
+        font-size: 1.5em;
+    }
+
+    #parts {
+        width: 85vw;
+        font-size: 2em;
+    }
+
+    .h5 {
+        margin: 25px 25px;
+        font-size: 1.5em;
+        align-self: center;
+    }
+
+    .content-index {
+        z-index: 5;
+    }
+
+    .header-principal {
+        display: flex;
+        justify-content: flex-end;
+        height: fit-content;
+        z-index: 9;
+    }
+
+    .ul-principal {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100vh;
+        justify-content: flex-start;
+
+    }
+
+    .ul-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 80px 0 0 20px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    #toggle-button {
+        z-index: 9;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        background-color: none;
+        border: none;
+    }
+    .ul-principal li a {
+        padding-bottom: 1px;
+    }
+    .ul-principal li :hover {
+        padding-bottom: 1px;
+    }
+    .hide{
+        display: none;
+    }
+    .navnum{
+        display: inline;
+    }
+    .nav-btn{
+        display: flex ;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 0;
+    }
+    h3#parts{
+        font-size: 1.5em;
+    }
+    .content-technology{
+        font-size: 0.9em;
+    }
+    .subheading2{
+        font-size: 1em;
+    }
+    .active-technology{
+        background-color: var(--white);
+        color: var(--bg-color);
+    }
+    .ul-technology button:hover {
+        color: var(--bg-color);
+        background-color: var(--white);
+        border: 1px solid var(--white);
+    }
+
+    
+    /*>>>>>>> TECHNOLOGY - FINAL <<<<<<<*/
+}

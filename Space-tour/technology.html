@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Technology</title>
+    <script>
+
+    </script>
+</head>
+
+<body class="body-thechnology">
+    <header class="header-principal">
+        <img id="logo" src="./Assests/Logo.png" alt="Logo">
+        <div class="line-header"></div>
+        <nav class="main-nav">
+            <div id="toggle-button">
+                <img onclick="toggleBar()" class="toggle-button" src="./Assests/Group.png" alt="">
+            </div>
+            <ul id="ul-principal" class="ul-principal hide">
+                <li>
+                    <a onclick="toggleBar()" class="navtext" href="index.html">
+                        <buttom><span class="navnum">00</span> HOME</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn" class="navtext" href="destination.html">
+                        <buttom><span class="navnum">01</span> DESTINATION</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn" class="navtext" href="crew.html">
+                        <buttom><span class="navnum">02</span> CREW</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn active" class="navtext" href="technology.html">
+                        <buttom><span class="navnum">03</span> TECNOLOGY</buttom>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h5 class="h5"> <b> 03 </b> SPACE LAUNCH 101 </h5>
+    <main class="main-technology">
+        <section class="content-technology">
+            <section class="sub-content-technology">
+                <article class="dados-technology">
+                    <nav>
+                        <ul class="ul-technology">
+                            <li>
+                                <a onclick="changeClass(1)"><button id="launch" class="active-technology">1</button></a>
+                            </li>
+                            <li>
+                                <a onclick="changeClass(2)"><button id="port">2</button></a>
+                            </li>
+                            <li>
+                                <a onclick="changeClass(3)"><button id="capsule">3</button></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tittle-text-technology">
+                        <p class="subheading2">THE TERMINOLOGY…</p>
+                        <h3 id="parts">LAUNCH VEHICLE</h3>
+                        <p id="text-technology">
+                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+                            from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is
+                            the
+                            most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on
+                            the
+                            launch pad!
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <aside id="part-img" class="aside-technology">
+                <img class="img-tec" src="./Assests/Launch-Vehicle.jpg" alt="Launch Vehicle">
+            </aside>
+        </section>
+    </main>
+    <script src="technology-app.js"></script>
+</body>
+
+
+
+
+
+
+</html>
