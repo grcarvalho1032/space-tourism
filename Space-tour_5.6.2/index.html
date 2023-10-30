@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body class="body-index">
+    <header class="header-principal">
+        <img id="logo" src="./Assests/Logo.png" alt="Logo">
+        <div class="line-header"></div>
+        <nav class="main-nav">
+            <div id="toggle-button">
+                <img onclick="toggleBar()" class="toggle-button" src="./Assests/Group.png" alt="">
+            </div>    
+            <ul id="ul-principal" class="ul-principal hide">
+                <li>
+                    <a onclick="toggleBar()" class="navtext active" href="index.html">
+                        <buttom><span class="navnum">00</span> HOME</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn" class="navtext" href="destination.html">
+                        <buttom><span class="navnum">01</span> DESTINATION</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn" class="navtext" href="crew.html">
+                        <buttom><span class="navnum">02</span> CREW</buttom>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="toggleBar()" class="nav-btn" class="navtext" href="technology.html">
+                        <buttom><span class="navnum">03</span> TECNOLOGY</buttom>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div id="toggle-button">
+            <a href="#" onclick="toggleBar()"><img class="toggle-button" src="./Assests/Group.png" alt=""></a>
+        </div> -->
+
+    </header>
+    <main class="content-index">
+        <section>
+            <h5 class="h5-index">SO, YOU WANT TO TRAVEL TO</h5>
+            <h1>SPACE</h1>
+            <p class="p-index">Let's face it; if you want to go to space, you might as well genuinely
+                go to outer space and not hover kind of on the edge of it. Well sit back,
+                and relax because we'll give you a truly out of this world experience!</p>
+        </section>
+        <aside>
+            <a href="destination.html"><button class="btn-explore">EXPLORE</Button></a>
+        </aside>
+    </main>
+    <script src="index-app.js"></script>
+</body>
+
+</html>
